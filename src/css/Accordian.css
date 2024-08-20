@@ -1,0 +1,48 @@
+.accordion {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+}
+
+.accordion-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* Reduced padding for tighter spacing */
+    cursor: pointer;
+    background-color: #2a2f3a;
+    color: #00ff00;
+    font-size: 14px; /* Reduced font size */
+}
+
+.accordion-title:hover {
+    background-color: #3a3f4a;
+}
+
+.accordion-content {
+    position: relative;
+    left: 0;
+    right: 0;
+    z-index: 10; /* Ensure it appears above other content */
+    padding: 8px; /* Further reduced padding for tighter content */
+    background-color: #1f2229;
+    color: #00ff00;
+    width: 700px; /* Allow it to take up full available space */
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-size: 12px; /* Reduced font size for content */
+}
+
+.hidden .items-center .justify-center p {
+    margin: 0; /* Removes margin from paragraph elements */
+    font-size: 12px; /* Reduced font size for paragraph text */
+    line-height: 1.2; /* Reduced line height for tighter spacing */
+}
